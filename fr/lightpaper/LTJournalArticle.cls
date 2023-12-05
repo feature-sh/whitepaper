@@ -139,6 +139,7 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage{titling} % Required for customizing the title section
+\usepackage{etoolbox} % Required for using \patchcmd
 
 \setlength{\droptitle}{-4\baselineskip} % Move the title up
 
@@ -149,6 +150,14 @@
 \setlength{\thanksmargin}{-3pt} % Left margin for the second and onwards \thanks line
 
 \patchcmd{\maketitle}{plain}{empty}{}{} % Set the headers and footers style for the first page to empty
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGE SECTION CUSTOMIZATION
+%----------------------------------------------------------------------------------------
+
+\usepackage[french, french]{babel}
+\frenchbsetup{StandardItemLabels=true}
+\usepackage{csquotes}
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT CUSTOMIZATION
