@@ -157,7 +157,8 @@
 
 \usepackage[french, french]{babel}
 \frenchbsetup{StandardItemLabels=true}
-\usepackage{csquotes}
+\usepackage[autostyle=false, style=french]{csquotes}
+\MakeOuterQuote{"}
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT CUSTOMIZATION

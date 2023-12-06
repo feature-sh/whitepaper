@@ -151,6 +151,14 @@
 \patchcmd{\maketitle}{plain}{empty}{}{} % Set the headers and footers style for the first page to empty
 
 %----------------------------------------------------------------------------------------
+%	LANGUAGE SECTION CUSTOMIZATION
+%----------------------------------------------------------------------------------------
+
+\usepackage[english]{babel}
+\usepackage[autostyle=false, style=english]{csquotes}
+\MakeOuterQuote{"}
+
+%----------------------------------------------------------------------------------------
 %	ABSTRACT CUSTOMIZATION
 %----------------------------------------------------------------------------------------
 
