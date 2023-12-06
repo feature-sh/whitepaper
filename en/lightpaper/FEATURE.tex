@@ -27,7 +27,7 @@
 	twoside, % Two side traditional mode where headers and footers change between odd and even pages, comment this option to make them fixed
 ]{LTJournalArticle}
 
-\addbibresource{sample.bib} % BibLaTeX bibliography file
+% \addbibresource{sample.bib} % BibLaTeX bibliography file
 
 \runninghead{} % A shortened article title to appear in the running head, leave this command empty for no running head
 
@@ -42,7 +42,7 @@
 % Authors are listed in a comma-separated list with superscript numbers indicating affiliations
 % \thanks{} is used for any text that should be placed in a footnote on the first page, such as the corresponding author's email, journal acceptance dates, a copyright/license notice, keywords, etc
 \author{%
-	Wagner Nicolas\thanks{Corresponding author: \href{mailto:nicolas@feature.sh}{nicolas@feature.sh}\\ \textbf{Published:} December 14, 2023}
+	Wagner Nicolas\thanks{Corresponding author: \href{mailto:nicolas@feature.sh}{nicolas@feature.sh}\\ \textbf{Published:} December 6, 2023}
 }
 
 % Full-width abstract
@@ -114,14 +114,30 @@ By relying on Atomic Contracts, FEATURE ensures client-developer economic transa
 
 FEATURE offers several types of configurations to best adapt to user needs in terms of user experience and security. To best meet the user's needs, it is possible to configure:
 
-the amount of the transaction, whether in coin (native token of a blockchain) or in token following the ERC20 standard.
-and the timeframe within which the task must be completed.
+\begin{itemize}
+\item
+  the amount of the transaction, whether in coin (native token of a blockchain) or in token following the ERC20 standard.
+\item
+  and the timeframe within which the task must be completed.
+\end{itemize}
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=0.88\textwidth]{media/diagram_web3_Feature.png}
+  \caption{FEATURE web3 diagram - This schematic epresents an overview of the workflow for the FEATURE Dapp, utilizing code management from GitHub repositories to interactions with blockchain smart contracts.}
+  \label{fig:web3 diagram}
+\end{figure*}
 
 In addition to this basic configuration, it is possible to configure economic incentives to ensure the quality of the deliverable:
 
-the challenge period during which reviewers can challenge the developer who completed the task,
-a deposit made at the time of the developer's code proposal to encourage other developers to review their code,
-and finally, the arbitrator to resolve the dispute between the issuer and the challenger in case of litigation, which can be a centralized arbitrator, a multisig, or a DAO (Kleros).
+\begin{itemize}
+\item
+  the challenge period during which reviewers can challenge the developer who completed the task,
+\item
+  a deposit made at the time of the developer code proposal to encourage other developers to review their code,
+\item
+  and finally, the arbitrator to resolve the dispute between the issuer and the challenger in case of litigation, which can be a centralized arbitrator, a multisig, or a DAO (Kleros).
+\end{itemize}
 
 In addition to these configurations, it is possible to perform transactions in self-custodial or custodial mode. The advantage of custodial mode is to no longer worry about blockchain transactions. It is simply configured by provisioning a wallet and associating each GitHub label, which allows, for example, to tag issues by the difficulty of the issue, with an Atomic Contract. This mode ensures an extremely smooth experience as the Atomic Contracts will then be automatically created at the time of labeling an issue. This last mode reconciles the advantage of Atomic Contracts with a much smoother "web2" experience for users.
 
@@ -133,20 +149,34 @@ In addition to these configurations, it is possible to perform transactions in s
 Let's explore the user experience by describing step by step the workflow from the creation of the Atomic Contract to its conclusion, i.e., its payment or possibly its resolution via the arbitrator:
 
 \begin{itemize}
-    \item creation of the GitHub issue;
-    \item labeling of the issue with a GitHub label configured with FEATURE to generate the Atomic Contract and escrow the cryptocurrency reward;
-    \item discussion about the work to be done, or in progress, directly in the discussion thread of the issue, and the refund of funds for the issuer if there were no code proposals, called pull-request, within the allotted time;
-    \item creation of a pull-request by a developer and registration of this proposal on the Atomic Contract;
-    \item code review by developers and possibly submission of a dispute if the challenger believes that the specifications have not been respected;
-    \item creation of a pull-request by a developer and registration of this proposal on the Atomic Contract;
-    \item in the event of a dispute, either the challenger will receive the developer's deposit and the Atomic Contract will be available to accept new code proposals, or the developer wins the dispute, he will then win the cryptocurrency reward and the Atomic Contract will be completed;
-    \item the merge of the pull-request to add the proposed solution implementation to the main code source.
+\item
+  creation of the GitHub issue;
+\item
+  labeling of the issue with a GitHub label configured with FEATURE to generate the Atomic Contract and escrow the cryptocurrency reward;
+\item
+  discussion about the work to be done, or in progress, directly in the discussion thread of the issue, and the refund of funds for the issuer if there were no code proposals, called pull-request, within the allotted time;
+\item
+  creation of a pull-request by a developer and registration of this proposal on the Atomic Contract;
+\item
+  code review by developers and possibly submission of a dispute if the challenger believes that the specifications have not been respected;
+\item
+  creation of a pull-request by a developer and registration of this proposal on the Atomic Contract;
+\item
+  in the event of a dispute, either the challenger will receive the developer's deposit and the Atomic Contract will be available to accept new code proposals, or the developer wins the dispute, he will then win the cryptocurrency reward and the Atomic Contract will be completed;
+\item
+  the merge of the pull-request to add the proposed solution implementation to the main code source.
 \end{itemize}
+
+The diagram Figure \ref{fig:web3 diagram} summarizes these different steps.
 
 This workflow ensures an optimal experience for both the developer, by offering an experience as close as possible to what they are accustomed to on GitHub with the assurance of being paid if they meet the specifications described in the issue, and for the issuer, who thanks to the review system can ensure a quality deliverable provided within the allotted time, which in case these requirements are not met will be refunded.
 
 \section{Conclusion}
 
-FEATURE offers a streamlined solution to motivate developers in contributing to Open Source projects via cryptocurrency rewards. This is actualized through the establishment of an Atomic Contract, ensuring on one hand the developer's compensation, and on the other, guaranteeing the issuer high-quality deliverables within the stipulated time frame. This innovation aligns closely with the developer's usual workflow, both in task consultation and in code reviews, while potentially receiving cryptocurrency rewards for their efforts. For the issuer, executing offers directly on GitHub and automating them through GitHub labels not only targets developers where they are most active but also simplifies the process of offer creation. FEATURE, thus, transforms GitHub collaboration into a more straightforward and rewarding experience, rendering it an ideal tool for accelerating code development in Open Source projects.
+FEATURE offers a streamlined solution to motivate developers in contributing to Open Source projects via cryptocurrency rewards. This is actualized through the establishment of an Atomic Contract, ensuring on one hand the developer's compensation, and on the other, guaranteeing the issuer high-quality deliverables within the stipulated time frame.
+
+This innovation aligns closely with the developer's usual workflow, both in task consultation and in code reviews, while potentially receiving cryptocurrency rewards for their efforts. For the issuer, executing offers directly on GitHub and automating them through GitHub labels not only targets developers where they are most active but also simplifies the process of offer creation.
+
+FEATURE, thus, transforms GitHub collaboration into a more straightforward and rewarding experience, rendering it an ideal tool for accelerating code development in Open Source projects.
 
 \end{document}
