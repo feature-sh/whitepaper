@@ -80,7 +80,13 @@ FEATURE positions itself at the forefront of this transformation. By integrating
 
 GitHub initially emerged as a code hosting and version tracking solution with a web interface. Its graphical interface displays the various evolutions of the code executed by the Git software. GitHub has evolved to offer a range of tools surrounding code, such as task tracking (issue tracking), project management (GitHub Project), the DevOps part (GitHub Actions), and the ability for third-party applications to integrate into its ecosystem through "extensions" on GitHub.
 
-FEATURE leverages this GitHub extension functionality. It is also listed on the GitHub Marketplace. The GitHub integration allows for simplified management of cryptocurrency rewards. There is no need to use a third-party application to utilize it. The creation, claim, and payment of the cryptocurrency reward are done directly on GitHub. This presents two major advantages: For the client, since the cryptocurrency reward is directly on GitHub, it reaches developers where they are already present, increasing the power to attract a larger number of developers. For developers, their workflow is simplified as it takes place on a platform they are accustomed to working with.
+FEATURE leverages this GitHub extension functionality. It is also listed on the GitHub Marketplace. The GitHub integration allows for simplified management of cryptocurrency rewards. There is no need to use a third-party application to utilize it. The creation, claim, and payment of the cryptocurrency reward are done directly on GitHub. This presents two major advantages:
+\begin{itemize}
+\item
+  for the client, since the cryptocurrency reward is directly on GitHub, it reaches developers where they are already present, increasing the power to attract a larger number of developers.
+\item
+  for developers, their workflow is simplified as it takes place on a platform they are accustomed to working with.
+\end{itemize}
 
 The GitHub platform has significantly contributed to Open Source as a whole, particularly in the blockchain domain. Bitcoin and Ethereum are among many examples. Open Source, which refers to software where the code is accessible to all, attracts numerous developers, but it is often a non-profit "market." For these developers, motivations can be diverse: technical (skill improvement, bug fixing for program usage...), social (building a portfolio of contributions), and economic (reward for finding security flaws...). However, these factors often do not suffice to stimulate massive participation from external developers. This is even more true when it comes to making significant contributions, which are usually the result of a small group of developers paid by a foundation or a private entity.
 
@@ -124,7 +130,7 @@ FEATURE offers several types of configurations to best adapt to user needs in te
 \begin{figure*}[ht]
   \centering
   \includegraphics[width=0.88\textwidth]{media/diagram_web3_Feature.png}
-  \caption{FEATURE web3 diagram - This schematic epresents an overview of the workflow for the FEATURE Dapp, utilizing code management from GitHub repositories to interactions with blockchain smart contracts.}
+  \caption{FEATURE web3 diagram - This schematic represents an overview of the workflow for the FEATURE Dapp, utilizing code management from GitHub repositories to interactions with blockchain smart contracts.}
   \label{fig:web3 diagram}
 \end{figure*}
 
@@ -139,7 +145,7 @@ In addition to this basic configuration, it is possible to configure economic in
   and finally, the arbitrator to resolve the dispute between the issuer and the challenger in case of litigation, which can be a centralized arbitrator, a multisig, or a DAO (Kleros).
 \end{itemize}
 
-In addition to these configurations, it is possible to perform transactions in self-custodial or custodial mode. The advantage of custodial mode is to no longer worry about blockchain transactions. It is simply configured by provisioning a wallet and associating each GitHub label, which allows, for example, to tag issues by the difficulty of the issue, with an Atomic Contract. This mode ensures an extremely smooth experience as the Atomic Contracts will then be automatically created at the time of labeling an issue. This last mode reconciles the advantage of Atomic Contracts with a much smoother "web2" experience for users.
+In addition to these configurations, it is possible to perform transactions in self-custodial or custodial mode. The advantage of custodial mode is to no longer worry about blockchain transactions. It is simply configured by provisioning a wallet and associating each GitHub label, which allows, for example, to tag issues by the difficulty of the issue, with an Atomic Contract. This mode ensures an extremely smooth experience as the Atomic Contracts will then be automatically created at the time of labeling an issue. This last mode reconciles the advantage of Atomic Contracts with a much smoother "web2 experience" for users.
 
 
 %------------------------------------------------
@@ -148,7 +154,7 @@ In addition to these configurations, it is possible to perform transactions in s
 
 Let's explore the user experience by describing step by step the workflow from the creation of the Atomic Contract to its conclusion, i.e., its payment or possibly its resolution via the arbitrator:
 
-\begin{itemize}
+\begin{enumerate}
 \item
   creation of the GitHub issue;
 \item
@@ -165,7 +171,7 @@ Let's explore the user experience by describing step by step the workflow from t
   in the event of a dispute, either the challenger will receive the developer's deposit and the Atomic Contract will be available to accept new code proposals, or the developer wins the dispute, he will then win the cryptocurrency reward and the Atomic Contract will be completed;
 \item
   the merge of the pull-request to add the proposed solution implementation to the main code source.
-\end{itemize}
+\end{enumerate}
 
 The diagram Figure \ref{fig:web3 diagram} summarizes these different steps.
 
