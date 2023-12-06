@@ -81,8 +81,7 @@
 Depuis l'avènement d'Internet, les procédés de travail ont radicalement changé, passant de méthodes bien souvent localisées, individuelles et manuelles à des approches globales, collaboratives et numériquement connectées. Les e-mails, les forums de discussions et les premiers sites web ont considérablement participé à
 la généralisation du travail collaboratif. L'une des avancées les plus significatives de ces outils est la possibilité de communiquer et de partager des informations de manière instantané à l'échelle mondiale, favorisant l'essor du travail à distance et du travail indépendant.
 
-Les professionnels ont commencé à exploiter ces nouvelles opportunités pour proposer leurs compétences et leurs services à un public mondial. En parallèle, les modes de rémunération ont fortement évolué. Le traditionnel salariat s'est vu fortement concurrencé par le
-paiement à l'heure, au projet et même à la tâche (\emph{microtasking})..
+Les professionnels ont commencé à exploiter ces nouvelles opportunités pour proposer leurs compétences et leurs services à un public mondial. En parallèle, les modes de rémunération ont fortement évolué. Le traditionnel salariat s'est vu fortement concurrencé par le paiement à l'heure, au projet et même à la tâche (\emph{microtasking})..
 
 Cette évolution des modèles engendre, d'une part, une concurrence plus importante qui profite aux recruteurs mais d'un autre côté permet aux indépendants d'avoir un accès à une offre de missions plus importantes et plus diversifiés. Pour répondre à ce besoin de mettre en relation clients et \emph{freelancers}, de nombreuses \emph{marketplace} de \emph{freelancing} ont vu le jour comme par exemple \emph{Upwork} ou \emph{Fiverr}.
 
@@ -96,7 +95,13 @@ FEATURE se positionne à l'avant-garde de cette transformation. En intégrant de
 
 Github est initialement une solution d'hébergement et de suivi de version du code avec une interface web. L'interface graphique montre les diverses évolutions du code réalisé par le logiciel Git. Github a évolué pour offrir tout un panel d'outils autour du code comme le suivi de tâche (\emph{issue tracking}), la gestion de projet (Github Project), la partie devOps (Github Actions) ainsi que la possibilité aux applications tierces de s'intégrer à cet écosystème grâce aux "extensions" Github.
 
-FEATURE s'appuie sur cette fonctionnalité d'extension Github. Elle est d'ailleurs listée sur la Marketplace Github. L'intégration Github permet une gestion simplifiée des \emph{crypto-rewards}. Il n'est pas nécessaire de passer par une application tierce pour pouvoir l'utiliser. La création, la réclamation et le paiement du \emph{crypto-reward} se font directement sur Github. Ce qui présente deux avantages majeurs. Le premier pour le client, puisque le crypto-reward étant directement sur Github, le client touche les développeurs où ils sont déjà. Ce qui augmente le pouvoir d'attirer un plus grand nombre de développeurs. Le second pour les développeurs, leur mode de travail s'en trouve simplifié puisqu'il se passe sur une plateforme sur laquelle ils ont l'habitude de travailler.
+FEATURE s'appuie sur cette fonctionnalité d'extension Github. Elle est d'ailleurs listée sur la Marketplace Github. L'intégration Github permet une gestion simplifiée des \emph{crypto-rewards}. Il n'est pas nécessaire de passer par une application tierce pour pouvoir l'utiliser. La création, la réclamation et le paiement du \emph{crypto-reward} se font directement sur Github. Ce qui présente deux avantages majeurs:
+\begin{itemize}
+\item
+  le premier pour le client, puisque le crypto-reward étant directement sur Github, le client touche les développeurs où ils sont déjà. Ce qui augmente le pouvoir d'attirer un plus grand nombre de développeurs.
+\item
+  le second pour les développeurs, leur mode de travail s'en trouve simplifié puisqu'il se passe sur une plateforme sur laquelle ils ont l'habitude de travailler.
+\end{itemize}
 
 La plateforme Github a largement contribué à l'\emph{Open Source} dans son ensemble et en particulier dans le domaine de la blockchain. \emph{Bitcoin} et \emph{Ethereum} en sont des exemples parmi tant d'autres. L'\emph{Open Source}, qui fait référence aux logiciels où le code est accessible à tous, attire de nombreux développeurs mais c'est bien souvent un "marché" non lucratif. Pour ces derniers, les motivations peuvent être diverses: technique (monter en compétence, résoudre un \emph{bug} pour utiliser le programme\ldots), social (se construire un \emph{portfolio} de contributions) et économique (récompense donnée pour avoir trouvé une faille de sécurité\ldots). Cependant, bien souvent, ces facteurs ne suffisent pas à stimuler une participation massive des développeurs externes. Cela est encore plus vrai quand il s'agit de réaliser des contributions majeures, ces dernières étant le fruit d'un groupe restreint de développeurs rémunérés par une fondation
 ou un organisme privé.
@@ -164,7 +169,7 @@ En plus de ces configurations, il est possible d'effectuer les transactions en m
 
 Voyons l'expérience utilisateur en décrivant étapes par étapes le workflow de la création de l'\emph{Atomic Contract} à sa conclusion c'est-a-dire son paiement ou éventuellement sa résolution via l'arbitre:
 
-\begin{itemize}
+\begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
   création de l'\emph{issue} Github;
@@ -180,7 +185,7 @@ Voyons l'expérience utilisateur en décrivant étapes par étapes le workflow d
   dans le cas d'une dispute, soit le \emph{challenger} percevra le \emph{deposit} du développeur et l'\emph{Atomic Contract} sera disponible pour accepter de nouvelles propositions de code, soit le développeur gagne la dispute, il gagnera alors le \emph{crypto-reward} et l'\emph{Atomic Contract} sera terminé;
 \item
   le \emph{merge} de la \emph{pull-request} afin d'ajouter l'implémentation de la solution proposée sur la source principale du code.
-\end{itemize}
+\end{enumerate}
 
 Le diagramme Figure \ref{fig:web3 diagram} récapitule ces différentes étapes.
 
